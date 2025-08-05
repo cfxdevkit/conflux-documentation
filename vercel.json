@@ -1,0 +1,11 @@
+{
+  "github": {
+    "autoJobCancelation": false
+  },
+  "git": {
+    "deploymentEnabled": {
+      "l10n_main": false
+    }
+  },
+  "trailingSlash": false
+}

@@ -1,0 +1,47 @@
+---
+sidebar_position: 3
+title: 面向 dApp 开发者
+keywords:
+  - dApp
+  - dapp-development
+  - smart-contracts
+  - frontend
+  - conflux-basics
+  - espace
+  - core-space
+  - tools
+---
+
+去中心化应用程序（dApps）是下一代应用程序开发的方向，其利用区块链的潜力，提供更透明、更安全、以用户为中心的数字体验。 主要的区别在于后端：dApps不依赖于集中式服务器，而是使用区块链作为它们的支柱。 由于dApps允许直接与用户的钱包集成，它们可以促进无缝且无需信任的点对点交互。
+
+构建dApp的每一步都会面临新的考虑因素、见解和挑战。 以下是几个部分的概括性描述，旨在通过大量可用的内部资源为开发者提供指导：
+
+## Conflux开发基础
+
+| 标题                                                                                                             | 描述                                                                    | 主题               |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------- |
+| **Conflux [Core Space](../core/getting-started/installing-a-wallet.md) 和 [eSpace](../espace/UserGuide.md) 入门** | Conflux Core Space 和 Conflux eSpace 用户指南。                             | 钱包安装、测试网水龙头、用户指南 |
+| **[Core Space](../core/core-endpoints.md) 和 [eSpace](../espace/network-endpoints.md) 网络端点**                    | Conflux Core Space 和 Conflux eSpace 的公共网络端点，使您能够通过 JSON-RPC 连接到区块链网络。 | 链ID、网络端点         |
+| **[Core Space](/docs/category/sdks-and-tools) 和 [eSpace](../espace/DeveloperQuickstart.md) 上的 SDK 和工具**        | 辅助构建 web3 应用的 SDK 和工具。                                                | SDK、工具链、Hardhat  |
+
+## 熟悉智能合约
+
+| 标题                                                           | 描述                                                    | 主题                      |
+| ------------------------------------------------------------ | ----------------------------------------------------- | ----------------------- |
+| [**智能合约简介**](../general/conflux-basics/contracts.md)         | 智能合约的概述和基本介绍                                          | 概念                      |
+| [**智能合约开发**](/docs/category/smart-contracts)                 | 智能合约开发的基本教程，包括智能合约开发工作流、基础 Solidity 语法和常用的代币标准。       | Solidity、代币标准           |
+| [**如何在 eSpace 部署合约**](/docs/category/how-to-deploy-contract) | 使用构建工具（如 hardhat、remix）在 **Conflux eSpace** 上部署合约的指南。 | Hardhat、Remix、Thirdweb  |
+
+## 前端开发
+
+| 标题                                                                  | 描述                                                                                                                                                                                                                                                                                                     | 主题                                 |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
+| [**use-wallet**](../general/build/tools/use-wallet)                 | `use-wallet` 是一个面向前端的钱包钩子库，旨在为轻量级 dapps 提供快速开发支持。 `use-wallet` is compatible with conflux chains and ethereum chains, with integration support for the React, Vue3 frameworks or pure js projects. Several sample projects is also provided to demonstrate how to use `use-wallet` in a minimal manner | 钱包连接、Fluent 钱包、MetaMask、React、Vue3 |
+| [**Fluent 集成**](../core/build/fluent.md)                            | Guidance on integrating Fluent wallet into your frontend. Note: this article mainly focus on the low-level interfaces and we recommend using the `use-wallet` library for high-level APIs.                                                                                                             | 钱包连接、Fluent 钱包                     |
+| [**Scaffold Conflux**](../espace/tutorials/scaffoldCfx/scaffold.md) | Scaffold Conflux 的使用教程，它是 [Scaffold-ETH-2](https://scaffoldeth.io/) 模板在 Conflux 上的适配版本，使您能够在 **Conflux eSpace** 上部署合约并可以使用相关组件，它也集成了 hardhat，并可以快速部署 Scaffold-ETH-2。                                                                                                                                   | Scaffold、Hardhat、Conflux eSpace    |
+
+## 开发工具
+
+| 标题                                                                                              | 描述                                                                     | 主题          |
+| ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----------- |
+| [**IPFS 概述**](../general/build/nfts/ipfs.md) 和 [**Pinata 教程**](../general/build/nfts/pinata.md) | IPFS 的简介以及如何使用 Pinata 将文件“固定”到 IPFS。 如果您希望将文件上传到 IPFS，这将对 NFT 开发非常有价值。 | NFT 开发、IPFS |

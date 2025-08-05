@@ -1,0 +1,47 @@
+---
+sidebar_position: 1
+title: Prueba de trabajo (Proof of Work)
+displayed_sidebar: generalSidebar
+keywords:
+  - Conflux-Network
+  - Proof-of-Work
+  - PoW
+  - consensus-mechanism
+  - blockchain-security
+  - Bitcoin
+  - Ethereum
+  - Tree Graph
+  - GHAST
+  - transaction-throughput
+  - confirmation-latency
+  - decentralization
+  - mining
+tags:
+  - Proof-of-Work
+---
+
+## Concepto de PoW
+
+El concepto de Prueba de Trabajo (PoW) fue introducido por primera vez por Cynthia Dwork y Moni Naor en 1993 como un medio para prevenir el correo no deseado (spam). El concepto era simple: requiere que el remitente de correo electrónico resuelva un problema de computación antes de enviarlo. El problema computacional está diseñado para que requiera tiempo, necesitando cierta cantidad de poder computo para resolver.  El receptor del correo electrónico verificaría entonces que el remitente había resuelto el problema computacional antes de aceptar el correo electrónico. Este proceso de verificación aseguraría que sólo se aceptarán correos electrónicos legítimos y que los spammers no pueden inundar la bandeja de entrada del receptor con correos electrónicos no solicitados.
+
+La idea detrás de esto era hacer que resulte mucho más difícil y intensivo en recursos para que los spammers envíen correos masivos, mientras que todavía permite a los remitentes legítimos de correo electrónico enviar sus mensajes, pero con unas pocas inconveniencias. Mientras que el concepto de PoW para la prevención de spam por correo electrónico se escuchó, no fue ampliamente adoptada debido a las molestias que planteó a los remitentes de correo electrónico legítimos. Sin embargo, el concepto de PoW fue adaptado más tarde por Satoshi Nakamoto para crear el sistema electrónico de activos digitales peer-to-peer o la blockchain "bitcoin".
+
+## Consenso PoW de Bitcoin
+
+Bitcoin utiliza el mecanismo PoW para determinar quién puede agregar nuevos bloques en la cadena de bloques. El proceso de adición de un bloque involucra una y otra vez hacer hash en la cabecera del bloque con un valor nonce para encontrar un hash que cumpla con el objetivo de dificultad actual establecido por la red. Los mineros compiten para resolver este rompecabezas, y el primer minero en resolverlo es recompensado con bitcoins recién creados y cualquier comisión de transacción asociada con las transacciones en el bloque.
+
+Además, se introduce la **regla de cadena de bloques más larga** para asegurar que la red acuerde una sola versión de la cadena de bloques. Si dos mineros crean bloques al mismo tiempo, una bifurcación en la cadena de bloques ocurre, creando dos versiones competitivas de la cadena de bloques. Para determinar cuál de las dos bifurcaciones es la válida, se aplica la regla de cadena más larga. Esta regla establece que la bifurcación válida es la que tiene la cadena de bloques más larga, es decir el que tiene más prueba de trabajo invertido en él.
+
+Al hacer difícil y intensivo en recursos crear nuevos bloques, PoW asegura que la red es segura y que ninguna entidad puede controlar el sistema a menos que controle más del 51% de la potencia de cómputo. Además, el sistema de recompensas incentiva a los mineros para participar y mantener la red. La introducción de PoW ha revolucionado la manera en que pensamos en los sistemas descentralizados y ha allanado el camino para el desarrollo de muchas otras criptomonedas y aplicaciones de blockchain.
+
+## Consenso de PoW de Conflux
+
+Conflux también utiliza el mecanismo de consenso PoW para asegurar su red. Combinando la estructura de ledger [Tree-Graph](https://arxiv.org/pdf/1805.03870.pdf) y la [GHAST](https://confluxnetwork.medium.com/conflux-research-group-ghast-mechanism-adaptive-weight-ghast-explained-part-1-ffe8224a7282) regla de selección de cadena, puede lograr el mismo nivel de descentralización y seguridad que Bitcoin y Ethereum pero proporcionar más de dos órdenes de mejora de magnitud en la transacción (TPS) y latencia de confirmación. 
+
+```mdx-code-block
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
+```
+
+> Refer to the [Conflux Technical Presentation](https://confluxnetwork.org/files/Conflux_Technical_Presentation_20200309.pdf) page 45-47 for the most accurate description of Conflux's throughput.
